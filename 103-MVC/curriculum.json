@@ -1,0 +1,12 @@
+{
+    "datos personales":{
+        "nombre":"Andres Julian",
+        "apellidos": "Ramirez Guerrero",
+        "email": "andres@ramirez",
+        "telefono": "600232367",
+        "direccion": "calle falsa 123",
+        "codigopostal": "46100"
+    },
+    "experiencia":"",
+    "formacion": ""
+}
