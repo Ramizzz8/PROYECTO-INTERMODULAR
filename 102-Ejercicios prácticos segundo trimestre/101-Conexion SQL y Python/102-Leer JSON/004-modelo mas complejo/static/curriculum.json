@@ -1,0 +1,9 @@
+{
+  "datos_personales": {
+    "nombre": "Andres Julian",
+    "apellidos": "Ramirez Guerrero",
+    "correo": "andres@gmail.com",
+    "telefonos": ["342467", "976457"]
+  },
+  "experiencias_laborales": ["experiencia1", "experiencia2"]
+}

@@ -5,6 +5,9 @@
     <title>Plantilla</title>
   </head>
   <body>
+    <h1>--nombre--</h1>
+    <h2>--apellidos--</h2>
+    <h3>--email--</h3>
     <script>
       fetch('static/curriculum.json')
         .then(function (respuesta) {
@@ -12,6 +15,9 @@
         })
         .then(function (datos) {
           console.log(datos);
+          document.querySelector('h1').textContent = datos.nombre;
+          document.querySelector('h2').textContent = datos.apellidos;
+          document.querySelector('h3').textContent = datos.email;
         });
     </script>
   </body>

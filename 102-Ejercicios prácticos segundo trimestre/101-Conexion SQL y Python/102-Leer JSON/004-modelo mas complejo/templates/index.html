@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Plantilla</title>
+  </head>
+  <body>
+    <h1>--nombre--</h1>
+    <h2>--apellidos--</h2>
+    <h3>--email--</h3>
+    <div>
+      <h4>Experiencias Laborales:</h4>
+      <ul>
+        <li id="1">--Experiencia 1--</li>
+        <li id="2">--Experiencia 2--</li>
+      </ul>
+    </div>
+    <script>
+      fetch('static/curriculum.json')
+        .then(function (respuesta) {
+          return respuesta.json();
+        })
+        .then(function (datos) {
+          console.log(datos);
+          document.querySelector('h1').textContent = datos.datos_personales.nombre;
+          document.querySelector('h2').textContent = datos.datos_personales.apellidos;
+          document.querySelector('h3').textContent = datos.datos_personales.email;
+          document.querySelector('#1').textContent = datos.experiencias_laborales.experiencia1;
+          document.querySelector('#2').textContent = datos.experiencias_laborales.experiencia2;
+        });
+    </script>
+  </body>
+</html>
