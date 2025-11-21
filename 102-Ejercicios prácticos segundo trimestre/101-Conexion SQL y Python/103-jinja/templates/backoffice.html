@@ -59,7 +59,9 @@
         <button>Inicio</button>
         <button>Clientes</button>
         <button>Productos</button>
-        <button>Pedidos</button>
+        {%for tabla in tablas %}
+        <button>{{tabla}}</button>
+        {%endfor%}
       </nav>
       <section>
         <h1>Backoffice</h1>
