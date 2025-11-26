@@ -5,5 +5,12 @@
     "correo": "andres@gmail.com",
     "telefonos": ["342467", "976457"]
   },
-  "experiencias_laborales": ["experiencia1", "experiencia2"]
+  "experiencias_laborales": [
+    {
+      "titulo": "Camarero",
+      "empresa": "City wok",
+      "timespan": "2024-2025",
+      "descripcion": "Atencion al cliente y limpieza"
+    }
+  ]
 }
